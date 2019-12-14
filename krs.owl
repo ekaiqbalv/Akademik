@@ -1,0 +1,361 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#"
+     xml:base="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs"
+     xmlns:krs="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#diajar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#diajar">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#mengajar"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#MataKuliah"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#Dosen"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#dipelajari -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#dipelajari">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#mempelajari"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#MataKuliah"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#Mahasiswa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#mempelajari -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#mempelajari">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#Mahasiswa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#MataKuliah"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#mengajar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#mengajar">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#Dosen"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#MataKuliah"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#kode_matakuliah -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#kode_matakuliah"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#nama -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#nama"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#nim -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#nim">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#nip -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#nip"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#prodi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#prodi"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#ruang_kerja -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#ruang_kerja"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#semester -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#semester"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#sks_matakuliah -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#sks_matakuliah"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#tahun_masuk -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#tahun_masuk"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#umur -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#umur">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#Dosen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#Dosen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#Masyarakat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#Mahasiswa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#Mahasiswa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#Masyarakat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#Masyarakat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#Masyarakat"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#MataKuliah -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#MataKuliah"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#MataKuliahKeminatan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#MataKuliahKeminatan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#MataKuliah"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#MataKuliahWajib -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#MataKuliahWajib">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#MataKuliah"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#CIF61251 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#CIF61251">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#MataKuliahWajib"/>
+        <dipelajari rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#175150200111029"/>
+        <kode_matakuliah>CIF61251</kode_matakuliah>
+        <nama>Keamanan Informasi</nama>
+        <sks_matakuliah rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</sks_matakuliah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#CIF61252 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#CIF61252">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#MataKuliahWajib"/>
+        <dipelajari rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#175150200111029"/>
+        <kode_matakuliah>CIF61252</kode_matakuliah>
+        <nama>Pengenalan Pola</nama>
+        <sks_matakuliah rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</sks_matakuliah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#CIF61255 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#CIF61255">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#MataKuliahWajib"/>
+        <dipelajari rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#175150200111029"/>
+        <dipelajari rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#175150201111072"/>
+        <kode_matakuliah>CIF61255</kode_matakuliah>
+        <nama>Rekayasa Perangkat Lunak</nama>
+        <sks_matakuliah rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</sks_matakuliah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#CIF61256 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#CIF61256">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#MataKuliahWajib"/>
+        <dipelajari rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#175150200111029"/>
+        <dipelajari rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#175150201111072"/>
+        <kode_matakuliah>CIF61256</kode_matakuliah>
+        <nama>Pemrograman Platform Khusus</nama>
+        <sks_matakuliah rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</sks_matakuliah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#CIF61551 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#CIF61551">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#MataKuliahKeminatan"/>
+        <dipelajari rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#175150200111029"/>
+        <dipelajari rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#175150201111072"/>
+        <kode_matakuliah>CIF61551</kode_matakuliah>
+        <nama>Rekayasa &amp; Manajemen Kebutuhan</nama>
+        <sks_matakuliah rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</sks_matakuliah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#CIF61552 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#CIF61552">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#MataKuliahKeminatan"/>
+        <dipelajari rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#175150200111029"/>
+        <dipelajari rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#175150201111072"/>
+        <kode_matakuliah>CIF61552</kode_matakuliah>
+        <nama>Rekayasa Pengetahuan</nama>
+        <sks_matakuliah rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</sks_matakuliah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#CIF61571 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#CIF61571">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#MataKuliahKeminatan"/>
+        <dipelajari rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#175150200111029"/>
+        <dipelajari rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#175150201111072"/>
+        <kode_matakuliah>CIF61571</kode_matakuliah>
+        <nama>Web Semantik</nama>
+        <sks_matakuliah rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</sks_matakuliah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#CIF61654 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#CIF61654">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#MataKuliahKeminatan"/>
+        <dipelajari rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#175150201111072"/>
+        <kode_matakuliah>CIF61654</kode_matakuliah>
+        <nama>Pemrograman Aplikasi Perangkat Bergerak</nama>
+        <sks_matakuliah rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</sks_matakuliah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#COM60062 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#COM60062">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#MataKuliahWajib"/>
+        <dipelajari rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#175150201111072"/>
+        <kode_matakuliah>COM60062</kode_matakuliah>
+        <nama>Etika Profesi</nama>
+        <sks_matakuliah rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</sks_matakuliah>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#175150200111029 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#175150200111029">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#Mahasiswa"/>
+        <mempelajari rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#CIF61251"/>
+        <mempelajari rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#CIF61252"/>
+        <mempelajari rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#CIF61255"/>
+        <mempelajari rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#CIF61256"/>
+        <mempelajari rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#CIF61551"/>
+        <mempelajari rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#CIF61552"/>
+        <mempelajari rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#CIF61571"/>
+        <nama>ANDI FIKRI SAFARAZ DININGRAT</nama>
+        <nim rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">175150200111029</nim>
+        <prodi>Teknik Informatika</prodi>
+        <semester rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</semester>
+        <tahun_masuk rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</tahun_masuk>
+        <umur rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</umur>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#175150201111072 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#175150201111072">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#Mahasiswa"/>
+        <mempelajari rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#CIF61255"/>
+        <mempelajari rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#CIF61256"/>
+        <mempelajari rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#CIF61551"/>
+        <mempelajari rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#CIF61552"/>
+        <mempelajari rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#CIF61571"/>
+        <mempelajari rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#CIF61654"/>
+        <mempelajari rdf:resource="http://www.semanticweb.org/ekaiq/ontologies/175150201111072/krs#COM60062"/>
+        <nama>EKA IQBAL VIRGIAWAN</nama>
+        <nim rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">175150201111072</nim>
+        <prodi>Teknik Informatika</prodi>
+        <semester rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</semester>
+        <tahun_masuk rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</tahun_masuk>
+        <umur rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</umur>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
