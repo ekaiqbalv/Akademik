@@ -1,0 +1,27 @@
+nav{
+    background-color: #ff8720;
+    color: white;
+}
+nav .navbar-nav{
+    margin-left: 60px;
+}
+nav a{
+    color: white !important;
+    border-radius: 4px;
+    margin-right: 16px;
+}
+nav a:hover{
+    background-color: #fe7500;
+}
+table{
+    text-align: center;
+}
+tbody td{
+    vertical-align: middle !important;
+}
+.header-section{
+    font-size: 24px !important;
+}
+#filter{
+    margin: 8px 0px 8px 0px;
+}
